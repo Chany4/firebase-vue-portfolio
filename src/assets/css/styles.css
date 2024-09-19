@@ -154,11 +154,9 @@ body, html{
 /* Resume Section */
 
 #self3 {
-    width: 50%;
-    height: 40%;
     object-fit: cover;
     display: block;
-    max-width: 100%;
+    max-width: 80%;
     border-radius: 25px;
     border: 2px solid black;
     padding: 0;

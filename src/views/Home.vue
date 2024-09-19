@@ -19,11 +19,6 @@
     <section class="section space-projects i" id= "projects">
       <ProjectsComp/>
     </section>
-    
-    <section  class="section space i" id= "testimonials">
-      <TestimonialsComp/>
-    </section>
-    
     <section class="section" id="contact">
       <ContactComp/>
     </section>
@@ -36,7 +31,7 @@
 </template>
 <script>
 import LandingComp from '@/components/Landing.vue'
-// import AboutComp from '@/components/AboutComp.vue'
+import AboutMe from '@/components/AboutMe.vue'
 // import ResumeComp from '@/components/ResumeComp.vue'
 // import SkillsComp from '@/components/SkillsComp.vue'
 // import ProjectsComp from '@/components/ProjectsComp.vue'
@@ -49,7 +44,7 @@ import LandingComp from '@/components/Landing.vue'
 export default {
   components : {
     LandingComp,
-    // AboutComp,
+    AboutMe
     // ResumeComp,
     // SkillsComp,
     // ProjectsComp,
