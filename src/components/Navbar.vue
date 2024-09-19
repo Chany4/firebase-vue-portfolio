@@ -28,10 +28,13 @@
             <a class="nav-link" aria-current="page" href="#main">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#Resume">About</a>
+            <a class="nav-link" aria-current="page" href="#aboutSection">About</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" aria-current="page" href="#Resume">Resume</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#skills">Skills</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#projects">Projects</a>
