@@ -1,9 +1,7 @@
 <template>
-    <div class="pt-5">
         <!-- Landing Page -->
-      <div class="pt-5" data-aos="zoom-in-right" id="Landing" v-for="job in jobTitleData()" :key="job">
-        <div class="row justify-content-center align-items-center">
-          <div class="col-md-6 d-flex justify-content-start">
+        <div class="row justify-content-center align-items-center pt-5 b"  data-aos="zoom-in-right" id="Landing" v-for="job in jobTitleData()" :key="job">
+          <div class="col-md-6 d-flex justify-content-start a">
             <div class="home-text">
               <h1 class="text-capitalize">{{job.title}}</h1>
               <h3>{{ job.nameInJob }}</h3>
@@ -12,24 +10,23 @@
               </p>
             </div>
           </div>
-          <div class="col-md-6  pt-3" id="self3-div">
+          <div class="col-md-6  pt-3 b" id="self3-div">
             <img
               src="https://chany4.github.io/images.Portfolio/images/20240422_114648.jpg"
               class="mx-auto"
               alt="self3" id="self3"
               
             />
-          </div>
-          <div class="pt-5">
+            <div class="pt-5">
             <i class="lab la-html5"></i>
             <i class="lab la-css3-alt"></i>
             <i class="lab la-js-square"></i>
 
           </div>
+          </div>
+         
         </div>
-      </div>
         
-    </div>
 </template>
 <script>
 export default {
@@ -51,6 +48,12 @@ mounted() {
 }
 </script>
 <style scoped>
+.a{
+  background-color: white;
+}
+.b{
+  background-color: #373C2A;
+}
 [alt="self3"]{
     aspect-ratio: 1/1;
 }
@@ -58,11 +61,6 @@ mounted() {
   object-fit:contain;
 }
 
- #Landing {
-    width: 100%;
-    max-width: max-content;
-    color: white;
-}
 h1{
   font-family: "Antic Didone", serif;
   font-size: 4rem;

@@ -79,9 +79,7 @@
     justify-content: center;
     border-bottom: 2px solid black;
 }
-.space{
-    margin-bottom: 33vh;
-}
+
 
 body, html{
     
@@ -161,7 +159,6 @@ body, html{
     object-fit: cover;
     display: block;
     max-width: 100%;
-    padding-top:15px ;
     border-radius: 25px;
     border: 2px solid black;
     padding: 0;
