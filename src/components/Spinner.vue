@@ -1,86 +1,187 @@
 <template>
-    <div class="container">
-      <div class="loader"></div>
-    </div>
+  <div id="middle">
+    <div class="loader"></div>
+  </div>
 </template>
 <script>
-export default {
-    
-}
+export default {};
 </script>
 <style scoped>
-.container{
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+#middle{
+width: 100wv;
+height:100vh;
+overflow:hidden;
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: green;
 }
 
 .loader {
-  width: 48px;
-  height: 48px;
-  margin: auto;
+  width: fit-content;
+  height: 120px;
+  font-size: 17px;
+  font-family: monospace;
+  line-height: 1.4;
+  font-weight: bold;
+  padding: 30px 2px 50px;
+  background: linear-gradient(#000 0 0) 0 0/100% 100% content-box padding-box
+    no-repeat;
   position: relative;
+  overflow: hidden;
+  animation: l10-0 2s infinite cubic-bezier(1, 175, 0.5, 175);
 }
-
-.loader:before {
-  content: '';
-  width: 48px;
-  height: 5px;
-  background: #6ffb7b50;
+.loader::before {
+  content: "Loading";
+  display: inline-block;
+  animation: l10-2 2s infinite;
+}
+.loader::after {
+  content: "";
   position: absolute;
-  top: 60px;
-  left: 0;
-  border-radius: 50%;
-  animation: shadow324 0.5s linear infinite;
+  width: 34px;
+  height: 28px;
+  top: 110%;
+  left: calc(50% - 16px);
+  background: linear-gradient(
+        90deg,
+        #0000 12px,
+        #f92033 0 22px,
+        #0000 0 26px,
+        #fdc98d 0 32px,
+        #0000
+      )
+      bottom 26px left 50%,
+    linear-gradient(90deg, #0000 10px, #f92033 0 28px, #fdc98d 0 32px, #0000 0)
+      bottom 24px left 50%,
+    linear-gradient(
+        90deg,
+        #0000 10px,
+        #643700 0 16px,
+        #fdc98d 0 20px,
+        #000 0 22px,
+        #fdc98d 0 24px,
+        #000 0 26px,
+        #f92033 0 32px,
+        #0000 0
+      )
+      bottom 22px left 50%,
+    linear-gradient(
+        90deg,
+        #0000 8px,
+        #643700 0 10px,
+        #fdc98d 0 12px,
+        #643700 0 14px,
+        #fdc98d 0 20px,
+        #000 0 22px,
+        #fdc98d 0 28px,
+        #f92033 0 32px,
+        #0000 0
+      )
+      bottom 20px left 50%,
+    linear-gradient(
+        90deg,
+        #0000 8px,
+        #643700 0 10px,
+        #fdc98d 0 12px,
+        #643700 0 16px,
+        #fdc98d 0 22px,
+        #000 0 24px,
+        #fdc98d 0 30px,
+        #f92033 0 32px,
+        #0000 0
+      )
+      bottom 18px left 50%,
+    linear-gradient(
+        90deg,
+        #0000 8px,
+        #643700 0 12px,
+        #fdc98d 0 20px,
+        #000 0 28px,
+        #f92033 0 30px,
+        #0000 0
+      )
+      bottom 16px left 50%,
+    linear-gradient(90deg, #0000 12px, #fdc98d 0 26px, #f92033 0 30px, #0000 0)
+      bottom 14px left 50%,
+    linear-gradient(
+        90deg,
+        #fdc98d 6px,
+        #f92033 0 14px,
+        #222a87 0 16px,
+        #f92033 0 22px,
+        #222a87 0 24px,
+        #f92033 0 28px,
+        #0000 0 32px,
+        #643700 0
+      )
+      bottom 12px left 50%,
+    linear-gradient(
+        90deg,
+        #fdc98d 6px,
+        #f92033 0 16px,
+        #222a87 0 18px,
+        #f92033 0 24px,
+        #f92033 0 26px,
+        #0000 0 30px,
+        #643700 0
+      )
+      bottom 10px left 50%,
+    linear-gradient(
+        90deg,
+        #0000 10px,
+        #f92033 0 16px,
+        #222a87 0 24px,
+        #feee49 0 26px,
+        #222a87 0 30px,
+        #643700 0
+      )
+      bottom 8px left 50%,
+    linear-gradient(
+        90deg,
+        #0000 12px,
+        #222a87 0 18px,
+        #feee49 0 20px,
+        #222a87 0 30px,
+        #643700 0
+      )
+      bottom 6px left 50%,
+    linear-gradient(90deg, #0000 8px, #643700 0 12px, #222a87 0 30px, #643700 0)
+      bottom 4px left 50%,
+    linear-gradient(90deg, #0000 6px, #643700 0 14px, #222a87 0 26px, #0000 0)
+      bottom 2px left 50%,
+    linear-gradient(90deg, #0000 6px, #643700 0 10px, #0000 0) bottom 0px left
+      50%;
+  background-size: 34px 2px;
+  background-repeat: no-repeat;
+  animation: inherit;
+  animation-name: l10-1;
 }
-
-.loader:after {
-  content: '';
-  width: 100%;
-  height: 100%;
-  background: rgb(1, 154, 1);
-  position: absolute;
-  top: 0;
-  left: 0;
-  border-radius: 4px;
-  animation: jump7456 0.5s linear infinite;
-}
-
-@keyframes jump7456 {
-  15% {
-    border-bottom-right-radius: 3px;
-  }
-
-  25% {
-    transform: translateY(9px) rotate(22.5deg);
-  }
-
-  50% {
-    transform: translateY(18px) scale(1, .9) rotate(45deg);
-    border-bottom-right-radius: 40px;
-  }
-
-  75% {
-    transform: translateY(9px) rotate(67.5deg);
-  }
-
-  100% {
-    transform: translateY(0) rotate(90deg);
-  }
-}
-
-@keyframes shadow324 {
-
+@keyframes l10-0 {
   0%,
-    100% {
-    transform: scale(1, 1);
+  30% {
+    background-position: 0 0px;
   }
-
-  50% {
-    transform: scale(1.2, 1);
+  50%,
+  100% {
+    background-position: 0 -0.1px;
   }
 }
-    
+@keyframes l10-1 {
+  50%,
+  100% {
+    top: 109.5%;
+  }
+}
+@keyframes l10-2 {
+  0%,
+  30% {
+    transform: translateY(0);
+  }
+  80%,
+  100% {
+    transform: translateY(-260%);
+  }
+}
 </style>

@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1>Eduaction and Experience</h1>
+        <h1>Hii</h1>
     </div>
 </template>
 <script>
